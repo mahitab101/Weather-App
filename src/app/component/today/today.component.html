@@ -17,7 +17,7 @@
               </div>
               <div class="temperaturee">
                 <span class="display-1">
-                  <img class="img-fluid" src="assets/images/partly_cloudy.png" alt="">
+                  <img class="img-fluid" src="assets/images/partly_cloudy.png" alt="" *ngIf="weather.main.temp >= 40">
                   {{weather.main.temp | number : '1.0-0'}}
                 </span> °F
               </div>

@@ -1,0 +1,12 @@
+.weather-data{
+    margin-top: 100px;
+}
+.location h2{
+    font-weight: 600;
+}
+.temperaturee>span{
+    font-weight: 900;
+}
+.temperaturee img{
+    width: 55px;
+}

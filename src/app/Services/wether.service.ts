@@ -40,7 +40,7 @@ export class WetherService {
     }),
       switchMap((values)=>{
         console.log('values',values)
-        return this.http.get('http://api.openweathermap.org/data/2.5/weather', { params: values });
+        return this.http.get('http://api.openweathermap.org/data/2.5/forecast', { params: values });
         // return this.http.get(this.URL, { params: values });
 
       })

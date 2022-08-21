@@ -10,3 +10,29 @@
 .temperaturee img{
     width: 55px;
 }
+.bg{
+    background-image: url(../../../assets/images/partlysunny_day.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+input{
+    width: 100%;
+    box-shadow: none;
+    border: 0px;
+    border: solid 1px #9F9F9F;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: #9F9F9F;
+    padding-left: 10px;
+}

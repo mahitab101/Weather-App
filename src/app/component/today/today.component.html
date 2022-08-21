@@ -1,29 +1,34 @@
-<div class="d-flex justify-content-center">
-  <div class="spinner-grow text-secondary" role="status" *ngIf="isLoading">
-    <span class="sr-only"></span>
+<div class="container" >
+  <div class="d-flex justify-content-center align-items-center" style="z-index: 2;">
+    <div class="spinner-grow text-light" role="status" *ngIf="isLoading">
+      <span class="sr-only"></span>
+    </div>
   </div>
-</div>
-<div class="container" *ngIf="!isLoading">
-  <div class="row mt-5">
-    <div class="col-lg-12 d-flex justify-content-center align-items-center">
-          <div class="weather-area">
-            <div class="weather-data">
-              <div class="location">
-              <h2 class="display-3">{{weather.name}},{{weather.sys.country}}</h2> 
-              <span>{{currentDate | date : 'EEEE'}},</span>
-              <span>{{ currentDate | date:'hh:mm a' }}</span>
-              <p>{{weather.weather[0].description}}</p>
-              <p>Humidity :{{weather.main.humidity}} %</p>
-              </div>
-              <div class="temperaturee">
-                <span class="display-1">
-                  <img class="img-fluid" src="assets/images/partly_cloudy.png" alt="" *ngIf="weather.main.temp >= 40">
-                  {{weather.main.temp | number : '1.0-0'}}
-                </span> °F
-              </div>
+  <!-- <div class="row mt-5" *ngIf="!isLoading">
+    <div class="col-lg-12 text-light">
+      <div class="bg px-5">
+        <div class="form-group">
+          <input type="text" id="my-select" class="custom-select" name="">
+        </div>
+        <div class="weather-area d-flex justify-content-center align-items-center">
+          <div class="weather-data">
+            <div class="location">
+            <h2 class="display-5">{{weather.name}},{{weather.sys.country}}</h2> 
+            <span>{{currentDate | date : 'EEEE'}},</span>
+            <span>{{ currentDate | date:'hh:mm a' }}</span>
+            <p>{{weather.weather[0].description}}</p>
+            <p>Humidity :{{weather.main.humidity}} %</p>
+            </div>
+            <div class="temperaturee">
+              <span class="display-5">
+                <img class="img-fluid" src="assets/images/partly_cloudy.png" alt="" *ngIf="weather.main.temp >= 40">
+                {{weather.main.temp | number : '1.0-0'}}
+              </span> °F
             </div>
           </div>
+        </div>
+      </div>
     </div>
     <div class="col-lg-12"></div>
-  </div>
+  </div> -->
 </div>
